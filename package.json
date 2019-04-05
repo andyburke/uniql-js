@@ -1,14 +1,14 @@
 {
   "name": "uniql-js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Produces Javascript from UniQL ASTs.",
   "main": "src/compiler.js",
   "scripts": {
-    "test": "mocha tests/"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/honeinc/uniql-js.git"
+    "url": "git://github.com/andyburke/uniql-js.git"
   },
   "keywords": [
     "uniql",
@@ -17,14 +17,21 @@
     "ast",
     "dsl"
   ],
-  "author": "Andy Burke <aburke@bitflood.org>",
+  "author": "Andy Burke <andy.burke@mailbox.earth>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/honeinc/uniql-js/issues"
+    "url": "https://github.com/andyburke/uniql-js/issues"
   },
   "devDependencies": {
-    "mocha": "~2.0.1"
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "uniql": "^1.0.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   }
 }
